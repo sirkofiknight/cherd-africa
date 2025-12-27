@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CHERD Africa Projects - Explore our impactful health research and development projects across Africa.">
+    <title>Our Projects - CHERD Africa</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        .filter-buttons {
+            margin-bottom: 3rem;
+        }
+        .filter-btn {
+            padding: 0.7rem 1.5rem;
+            margin: 0.5rem;
+            border: 2px solid #0066cc;
+            background: white;
+            color: #0066cc;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: linear-gradient(135deg, #0066cc 0%, #00b4d8 100%);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 102, 204, 0.3);
+        }
+        .project-card {
+            transition: all 0.3s ease;
+            opacity: 1;
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-heartbeat me-2"></i>CHERD Africa
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary ms-lg-3" href="contact.html">Talk to Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="min-height: 50vh;">
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 text-center">
+                    <div class="hero-content animate-fadeInUp">
+                        <h1 class="mb-4">Our Projects</h1>
+                        <p class="lead">Making measurable impact through evidence-based interventions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Intro -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="lead reveal">CHERD Africa has successfully implemented diverse health research and development projects across multiple domains, partnering with international organizations to improve health outcomes for African communities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="py-3 bg-light">
+        <div class="container">
+            <div class="filter-buttons text-center reveal">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="tb-hiv">TB & HIV</button>
+                <button class="filter-btn" data-filter="maternal-child">Maternal & Child Health</button>
+                <button class="filter-btn" data-filter="respiratory">Respiratory Health</button>
+                <button class="filter-btn" data-filter="evaluation">Evaluation Studies</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="py-5">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="reveal">Featured Projects</h2>
+            </div>
+            <div class="row">
+                <!-- Project 1 -->
+                <div class="col-lg-6 mb-4 project-card" data-category="tb-hiv">
+                    <div class="card h-100 reveal">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="flex-shrink-0">
+                                    <div class="card-icon" style="width: 70px; height: 70px; font-size: 1.8rem;">
+                                        <i class="fas fa-lungs"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <span class="badge bg-primary mb-2">Global Fund</span>
+                                    <h4 class="card-title">Community, Rights and Gender Assessment of Tuberculosis in Ghana</h4>
+                                </div>
+                            </div>
+                            <p class="card-text">Comprehensive assessment of TB programs in Ghana, focusing on community engagement, human rights aspects, and gender-specific challenges. This project aims to improve treatment outcomes, reduce stigma, and ensure equitable access to TB services.</p>
+                            <div class="mt-3">
+                                <h6 class="text-primary"><i class="fas fa-bullseye me-2"></i>Key Objectives:</h6>
+                                <ul class="small">
+                                    <li>Assess community engagement in TB programs</li>
+                                    <li>Evaluate rights-based approaches to TB care</li>
+                                    <li>Analyze gender disparities in TB diagnosis and treatment</li>
+                                    <li>Develop recommendations for policy improvement</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-lg-6 mb-4 project-card" data-category="evaluation">
+                    <div class="card h-100 reveal delay-1">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="flex-shrink-0">
+                                    <div class="card-icon" style="width: 70px; height: 70px; font-size: 1.8rem;">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <span class="badge bg-success mb-2">GIZ</span>
+                                    <h4 class="card-title">Evaluation of Evidence-Based Intervention - Akoma Pa</h4>
+                                </div>
+                            </div>
+                            <p class="card-text">Rigorous evaluation of the Akoma Pa innovation, an evidence-based intervention designed to improve healthcare delivery in underserved communities. The study assesses effectiveness, scalability, and sustainability of the intervention model.</p>
+                            <div class="mt-3">
+                                <h6 class="text-primary"><i class="fas fa-bullseye me-2"></i>Key Objectives:</h6>
+                                <ul class="small">
+                                    <li>Measure intervention effectiveness and impact</li>
+                                    <li>Assess implementation fidelity and quality</li>
+                                    <li>Evaluate scalability and sustainability potential</li>
+                                    <li>Document best practices and lessons learned</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-lg-6 mb-4 project-card" data-category="maternal-child">
+                    <div class="card h-100 reveal delay-2">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="flex-shrink-0">
+                                    <div class="card-icon" style="width: 70px; height: 70px; font-size: 1.8rem;">
+                                        <i class="fas fa-child"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <span class="badge bg-info mb-2">IDRC</span>
+                                    <h4 class="card-title">Reducing Child Mortality Through Gender Disparity Analysis</h4>
+                                </div>
+                            </div>
+                            <p class="card-text">Research project analyzing gender disparities in child health outcomes and developing targeted interventions to reduce child mortality rates. The study examines social, cultural, and healthcare system factors contributing to differential outcomes.</p>
+                            <div class="mt-3">
+                                <h6 class="text-primary"><i class="fas fa-bullseye me-2"></i>Key Objectives:</h6>
+                                <ul class="small">
+                                    <li>Analyze gender disparities in child mortality</li>
+                                    <li>Identify contributing social and cultural factors</li>
+                                    <li>Develop gender-sensitive interventions</li>
+                                    <li>Build evidence base for policy advocacy</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="col-lg-6 mb-4 project-card" data-category="tb-hiv">
+                    <div class="card h-100 reveal delay-3">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="flex-shrink-0">
+                                    <div class="card-icon" style="width: 70px; height: 70px; font-size: 1.8rem;">
+                                        <i class="fas fa-ribbon"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <span class="badge bg-danger mb-2">WAPCAS</span>
+                                    <h4 class="card-title">Persons Living with HIV Stigma Index Study</h4>
+                                </div>
+                            </div>
+                            <p class="card-text">Comprehensive study measuring stigma and discrimination experienced by persons living with HIV. The research provides critical data to inform anti-stigma programs and improve quality of life for people living with HIV.</p>
+                            <div class="mt-3">
+                                <h6 class="text-primary"><i class="fas fa-bullseye me-2"></i>Key Objectives:</h6>
+                                <ul class="small">
+                                    <li>Measure levels of HIV-related stigma and discrimination</li>
+                                    <li>Assess impact on healthcare access and quality of life</li>
+                                    <li>Identify drivers of stigma in communities</li>
+                                    <li>Inform development of anti-stigma interventions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="col-lg-6 mb-4 project-card" data-category="respiratory">
+                    <div class="card h-100 reveal delay-4">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="flex-shrink-0">
+                                    <div class="card-icon" style="width: 70px; height: 70px; font-size: 1.8rem;">
+                                        <i class="fas fa-wind"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <span class="badge bg-warning text-dark mb-2">Respiratory Health</span>
+                                    <h4 class="card-title">Respiratory Health Improvement Initiative</h4>
+                                </div>
+                            </div>
+                            <p class="card-text">Implementation of health improvement interventions in rural and peri-urban settlements near Kumasi, focusing on pediatric respiratory infections through cost-effective prevention and behavioral change campaigns.</p>
+                            <div class="mt-3">
+                                <h6 class="text-primary"><i class="fas fa-bullseye me-2"></i>Key Objectives:</h6>
+                                <ul class="small">
+                                    <li>Reduce pediatric respiratory infection rates</li>
+                                    <li>Implement source reduction strategies</li>
+                                    <li>Conduct behavioral change campaigns</li>
+                                    <li>Improve child home care management</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="col-lg-6 mb-4 project-card" data-category="maternal-child">
+                    <div class="card h-100 reveal delay-5">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="flex-shrink-0">
+                                    <div class="card-icon" style="width: 70px; height: 70px; font-size: 1.8rem;">
+                                        <i class="fas fa-user-friends"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <span class="badge bg-secondary mb-2">Adolescent Health</span>
+                                    <h4 class="card-title">Sexual & Reproductive Health Campaign</h4>
+                                </div>
+                            </div>
+                            <p class="card-text">Comprehensive campaigns targeting both in-school and out-of-school adolescents with rights-based messaging and interventions focused on sexual and reproductive health rights and education.</p>
+                            <div class="mt-3">
+                                <h6 class="text-primary"><i class="fas fa-bullseye me-2"></i>Key Objectives:</h6>
+                                <ul class="small">
+                                    <li>Increase adolescent SRH knowledge and awareness</li>
+                                    <li>Promote rights-based approach to sexual health</li>
+                                    <li>Improve access to youth-friendly health services</li>
+                                    <li>Reduce risky sexual behaviors and outcomes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Impact Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="reveal">Our Project Impact</h2>
+                <p class="reveal">Measurable results across our portfolio</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card text-center h-100 reveal" style="background: linear-gradient(135deg, #0066cc 0%, #00b4d8 100%); color: white;">
+                        <div class="card-body p-4">
+                            <i class="fas fa-users fa-3x mb-3"></i>
+                            <h3 class="stat-number" data-target="50000" data-suffix="+">0</h3>
+                            <p class="mb-0">People Reached</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card text-center h-100 reveal delay-1" style="background: linear-gradient(135deg, #00b4d8 0%, #90e0ef 100%); color: white;">
+                        <div class="card-body p-4">
+                            <i class="fas fa-map-marked-alt fa-3x mb-3"></i>
+                            <h3 class="stat-number" data-target="15" data-suffix="+">0</h3>
+                            <p class="mb-0">Districts Covered</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card text-center h-100 reveal delay-2" style="background: linear-gradient(135deg, #90e0ef 0%, #48cae4 100%); color: white;">
+                        <div class="card-body p-4">
+                            <i class="fas fa-handshake fa-3x mb-3"></i>
+                            <h3 class="stat-number" data-target="20" data-suffix="+">0</h3>
+                            <p class="mb-0">Partner Organizations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card text-center h-100 reveal delay-3" style="background: linear-gradient(135deg, #48cae4 0%, #0077b6 100%); color: white;">
+                        <div class="card-body p-4">
+                            <i class="fas fa-chart-line fa-3x mb-3"></i>
+                            <h3 class="stat-number" data-target="85" data-suffix="%">0</h3>
+                            <p class="mb-0">Success Rate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Excellence -->
+    <section class="py-5">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="reveal">Research Excellence</h2>
+                <p class="reveal">Our approach to impactful research and implementation</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 text-center reveal">
+                        <div class="card-body p-4">
+                            <div class="card-icon mx-auto">
+                                <i class="fas fa-clipboard-list"></i>
+                            </div>
+                            <h4 class="card-title mt-3">Rigorous Methodology</h4>
+                            <p class="card-text">We apply scientific methodology to measure program impact and ensure evidence-based results.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 text-center reveal delay-1">
+                        <div class="card-body p-4">
+                            <div class="card-icon mx-auto">
+                                <i class="fas fa-people-carry"></i>
+                            </div>
+                            <h4 class="card-title mt-3">Community-Centered</h4>
+                            <p class="card-text">Our projects prioritize community engagement and cultural appropriateness for sustainable impact.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 text-center reveal delay-2">
+                        <div class="card-body p-4">
+                            <div class="card-icon mx-auto">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <h4 class="card-title mt-3">Adaptive Learning</h4>
+                            <p class="card-text">We continuously monitor, evaluate, and adapt our approaches based on evidence and feedback.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <h2 class="reveal">Interested in Partnering?</h2>
+                    <p class="lead reveal">Let's collaborate on impactful health research and development projects.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end reveal">
+                    <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h3 class="mb-3"><i class="fas fa-heartbeat me-2"></i>CHERD Africa</h3>
+                    <p>Centre for Health Equity Research and Development in Africa - Providing comprehensive public health services and research expertise across the continent.</p>
+                    <div class="social-links mt-4">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-links">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="footer-links">
+                        <h5>Our Services</h5>
+                        <ul>
+                            <li><a href="services.html">Project Management</a></li>
+                            <li><a href="services.html">Data Management</a></li>
+                            <li><a href="services.html">Grant Writing</a></li>
+                            <li><a href="services.html">M&E Services</a></li>
+                            <li><a href="services.html">Training</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="footer-links">
+                        <h5>Contact Info</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <i class="fas fa-map-marker-alt me-2"></i>
+                                Accra, Oyarifa<br>
+                                <span class="ms-4">GPS: GM-215-5608</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-phone me-2"></i>
+                                +233 248 168 933
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-envelope me-2"></i>
+                                info@cherdafrica.org
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span class="current-year">2024</span> CHERD Africa. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
